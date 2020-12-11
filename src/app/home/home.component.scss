@@ -2,21 +2,23 @@
 
   margin: 20px 0px;
 
-  .highlight-text {
-    font-size: 17px;
-    font-weight: 600;
-  }
+  // ::ng-deep .highlight-text {
+  //   font-size: 17px;
+  //   font-weight: 600;
+  // }
 
-  .dollar {
+  ::ng-deep .dollar {
     font-size: 11px;
     margin-right: 5px;
   }
 
-  .col-green {
+  ::ng-deep .col-green-bold {
     color: green;
+    font-size: 17px;
+    font-weight: 600;
   }
 
-  .col-blue {
+   .col-blue {
     color: blue;
   }
 

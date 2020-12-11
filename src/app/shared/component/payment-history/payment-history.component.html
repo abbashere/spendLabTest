@@ -20,7 +20,7 @@
   <ul class="amount-detail">
     <li *ngFor="let record of payment.payments">
       <div class="amount">
-        <p class="highlight-text col-blue"><span class="dollar">$</span>{{record.amount}}</p><br><span>Posted</span>
+        <p [ngClass]="{'col-blue-bold': record.type==='Schedule'}"><span class="dollar">$</span>{{record.amount}}</p><br><span>{{record.type}}</span>
       </div>
       <div class="text-about">
         <p>{{record['type-text']}}</p><br><span>{{record.date}}</span>
