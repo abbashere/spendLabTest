@@ -1,0 +1,20 @@
+<div>
+  <div class="box-top-heading">
+    <h6 class="heading">Recent Transactions</h6>
+    <a href="#">View All ></a>
+  </div>
+  <ul class="amount-detail">
+    <li *ngFor="let history of transaction">
+      <div class="amount">
+        <p class="highlight-text col-green"><span class="dollar">$</span>{{history.amount}}</p><br><span>{{history.type}}</span>
+      </div>
+      <div class="text-about">
+        <p>{{history.name}}</p><br><span>{{history.date}}</span>
+      </div>
+      <div class="icon-type">
+        <a href="#"><img src="../../../assets/invoice.png" alt="invoice" height="30px" /></a>
+        <a href="#"><img src="../../../assets/more.png" alt="invoice" height="30px" /></a>
+      </div>
+    </li>
+  </ul>
+</div>

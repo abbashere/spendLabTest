@@ -1,0 +1,61 @@
+.main-content {
+
+  margin: 20px 0px;
+
+  .highlight-text {
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .dollar {
+    font-size: 11px;
+    margin-right: 5px;
+  }
+
+  .col-green {
+    color: green;
+  }
+
+  .col-blue {
+    color: blue;
+  }
+
+  .col-grey {
+    color: grey;
+  }
+  .col-black {
+    color: black;
+  }
+
+
+  .table thead th {
+    border: none !important;
+  }
+
+
+
+
+  .content-header {
+    margin: 0;
+    .identity {
+      background-color: #ffffff;
+      padding: 10px 10px;
+      border: 1px solid #888;
+      box-shadow: 0px 3px 4px 2px #888888;
+      height: min-content;
+      p {
+        font-size: 14px;
+        font-weight: bold;
+      }
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .account-summary {
+    margin-bottom: 20px !important;
+  }
+}

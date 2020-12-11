@@ -1,0 +1,25 @@
+{
+  "account-summary": {
+    "available-balance": "6,740.50",
+    "forword-balance": "2,151.50",
+    "credit-balance": "10,000.00",
+    "spending-plus-adjustment": "1,208.00",
+    "rewards-point":"12,000"
+  },
+  "recent-transaction": [
+      { "amount":"58.50", "type": "Posted", "name": "United Airways", "date":"30 Nove 2020" },
+      { "amount":"158.50", "type": "Posted", "name": "United Airways", "date":"30 Nove 2020" },
+      { "amount":"1,158.50", "type": "Posted", "name": "United Airways", "date":"30 Nove 2020" },
+      { "amount":"258.50", "type": "Posted", "name": "United Airways", "date":"30 Nove 2020" }
+  ],
+  "payment" : {
+    "amount-due": "500.00",
+    "due-date":"10 Dec 2020",
+    "payments":[
+      { "amount":"100.00", "type": "Schedule", "type-text": "Chase checking", "date":"30 Nove 2020" },
+      { "amount":"500.00", "type": "Processed", "type-text": "Chase checking", "date":"30 Nove 2020" },
+      { "amount":"500.00", "type": "Processed", "type-text": "Chase checking", "date":"30 Nove 2020" }
+    ]
+  }
+
+}

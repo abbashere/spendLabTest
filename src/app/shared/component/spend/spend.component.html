@@ -1,0 +1,25 @@
+<div class="card">
+  <div class="card-body">
+    <table class="table">
+      <thead>
+        <tr>
+          <th colspan="3">Spending by Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3" class="align-middle">
+            <div style="display: block">
+              <canvas baseChart
+                          [data]="demodoughnutChartData"
+                          [labels]="doughnutChartLabels"
+                          [chartType]="doughnutChartType"
+                          (chartHover)="chartHovered($event)"
+                          (chartClick)="chartClicked($event)"></canvas>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

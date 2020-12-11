@@ -1,0 +1,34 @@
+<div>
+
+  <div class="box-top-heading">
+    <h6 class="heading">Payments</h6>
+    <a href="#">View All ></a>
+    <a href="#">Make Payment ></a>
+  </div>
+
+  <div class="row amount-highlight">
+    <div class="col-5 col-md-5 col-sm-12">
+      <span>Amount Due</span><br>
+      <p class="col-black"><span class="dollar">$</span>{{payment['amount-due']}}</p>
+    </div>
+    <div class="col-5 col-md-5 col-sm-12 offset-2">
+      <span>Due Date</span><br>
+      <p><span class="dollar">$</span>{{payment['due-date']}}</p>
+    </div>
+  </div>
+
+  <ul class="amount-detail">
+    <li *ngFor="let record of payment.payments">
+      <div class="amount">
+        <p class="highlight-text col-blue"><span class="dollar">$</span>{{record.amount}}</p><br><span>Posted</span>
+      </div>
+      <div class="text-about">
+        <p>{{record['type-text']}}</p><br><span>{{record.date}}</span>
+      </div>
+      <div class="icon-type">
+        <a href="#" *ngIf="record.type === 'Schedule'">Edit</a>
+        <a href="#" *ngIf="record.type === 'Processed'">View</a>
+      </div>
+    </li>
+  </ul>
+</div>

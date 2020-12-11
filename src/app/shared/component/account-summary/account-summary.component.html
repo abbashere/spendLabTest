@@ -1,0 +1,58 @@
+<div class="card">
+  <div class="card-body">
+    <table class="table">
+      <thead>
+        <tr>
+          <th colspan="2">Account Summary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- *ngFor="let employee of employees"-->
+          <td class="text-small-normal">Available Balance</td>
+          <td>
+            <div class="amount">
+              <p *ngIf="accountSummary['available-balance'] !== null" class="summary-ammount-highlight col-blue"><span class="dollar">$</span>{{accountSummary['available-balance']}}</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="text-small-normal">Forword Balance</span>
+            <p class="summary-ammount"><span class="dollar">$</span>{{accountSummary['forword-balance']}}</p>
+          </td>
+          <td>
+            <span class="text-small-normal">Credit Limit</span>
+            <p class="summary-ammount"><span class="dollar">$</span>{{accountSummary['credit-balance']}}</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="text-small-normal">Spending Plus Adjustment</span>
+            <p class="summary-ammount"><span class="dollar">$</span>{{accountSummary['spending-plus-adjustment']}}</p>
+          </td>
+          <td>
+            <span class="text-small-normal">Rewards Point</span>
+            <p class="summary-ammount">{{accountSummary['rewards-point']}}<a class="open-new" href="#">
+              <span class="glyphicon glyphicon-new-window"></span>
+            </a></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="summary-ammount">
+              <a class="download-text" href="#"><span class="glyphicon glyphicon-list-alt"></span>
+              <span>Download Statement</span></a>
+            </p>
+          </td>
+          <td>
+            <p class="summary-ammount">
+              <a class="download-text" href="#"><span class="glyphicon glyphicon-list-alt"></span>
+              <span>View All Statements</span></a>
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
